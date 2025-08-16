@@ -1,0 +1,20 @@
+{
+  "python.defaultInterpreterPath": "./backend_env/Scripts/python.exe",
+  "python.terminal.activateEnvironment": true,
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.languageServer": "Pylance",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.suggest.autoImports": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/backend_env": true,
+    "**/.history": true,
+    "**/__pycache__": true,
+    "**/*.pyc": true
+  }
+}
