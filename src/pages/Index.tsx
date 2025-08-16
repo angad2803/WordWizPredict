@@ -1,13 +1,13 @@
-import { useState } from "react";
-import { Header } from "@/components/Header";
-import { PredictionInput } from "@/components/PredictionInput";
-import { PredictionResults } from "@/components/PredictionResults";
 import { ErrorAlert } from "@/components/ErrorAlert";
+import { Header } from "@/components/Header";
 import { InfoSection } from "@/components/InfoSection";
 import { ModelVisualization } from "@/components/ModelVisualization";
-import { SentenceSuggestions } from "@/components/SentenceSuggestions";
 import OptunaVisualization from "@/components/OptunaVisualization";
+import { PredictionInput } from "@/components/PredictionInput";
+import { PredictionResults } from "@/components/PredictionResults";
+import { SentenceSuggestions } from "@/components/SentenceSuggestions";
 import { usePrediction } from "@/hooks/usePrediction";
+import { useState } from "react";
 
 const Index = () => {
   const [inputText, setInputText] = useState("");
@@ -85,6 +85,18 @@ const Index = () => {
 
         {/* Bottom Section - Info */}
         <InfoSection />
+
+        {/* Creator Credit */}
+        <div className="mt-8 text-center">
+          <div className="bg-white/70 backdrop-blur-sm rounded-lg p-4 shadow-sm border border-white/20">
+            <p className="text-gray-600 text-sm">
+              Created by{" "}
+              <span className="font-semibold text-indigo-600">
+                Angad Singh Madhok
+              </span>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
